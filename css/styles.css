@@ -1,0 +1,143 @@
+/* ----------------------------- */
+/* RESET & GLOBAL STYLES        */
+/* ----------------------------- */
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+    background: #0f172a; /* Clean professional dark background */
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #e2e8f0;
+    line-height: 1.7;
+    padding: 40px 0;
+}
+
+/* ----------------------------- */
+/* HERO SECTION                 */
+/* ----------------------------- */
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.avatar {
+    width: 150px; height: 150px;
+    border-radius: 50%;
+    border: 4px solid #60a5fa;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(96,165,250,0.6);
+}
+
+.name {
+    font-size: 2.6rem;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+.tagline {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+/* ----------------------------- */
+/* MAIN CONTAINER               */
+/* ----------------------------- */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ----------------------------- */
+/* GRADIENT BORDER CARDS        */
+/* ----------------------------- */
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 16px;
+    border: 3px solid transparent;
+
+    /* GRADIENT BORDER TRICK */
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+
+    background-image: 
+        linear-gradient(#0f172a, #0f172a), 
+        linear-gradient(135deg, #60a5fa, #818cf8, #c084fc);
+
+    box-shadow: 0 0 25px rgba(96,165,250,0.15);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 35px rgba(96,165,250,0.35);
+    transform: translateY(-3px);
+}
+
+.card h2 {
+    color: #93c5fd;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+/* ----------------------------- */
+/* HOBBIES PILL LIST            */
+/* ----------------------------- */
+.pill-list {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.pill-list li {
+    background: rgba(255,255,255,0.07);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    font-weight: 600;
+
+    background-image: 
+        linear-gradient(#0f172a, #0f172a), 
+        linear-gradient(135deg, #60a5fa, #818cf8, #a78bfa);
+
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    color: #dbeafe;
+}
+
+/* ----------------------------- */
+/* VIDEO EMBED                  */
+/* ----------------------------- */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56%;
+    border-radius: 16px;
+    overflow: hidden;
+
+    border: 3px solid transparent;
+    background-clip: padding-box, border-box;
+    background-image:
+        linear-gradient(#0f172a, #0f172a),
+        linear-gradient(135deg, #60a5fa, #818cf8, #c084fc);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    width: 100%; height: 100%;
+    border: none;
+}
+
+/* ----------------------------- */
+/* FOOTER                       */
+/* ----------------------------- */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #64748b;
+    font-size: 0.9rem;
+}
